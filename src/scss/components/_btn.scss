@@ -11,4 +11,8 @@
   padding: 25px 30px;
   min-width: 260px;
   cursor: pointer;
+
+  &--dark {
+    background-color: var(--dark-color);
+  }
 }
