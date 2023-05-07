@@ -5,14 +5,28 @@
 
   &__container {
     @include flex-v-center;
+
+    @include high-tablet {
+      display: block;
+    }
   }
 
   &__content {
     min-width: 516px;
+
+    @include high-tablet {
+      min-width: auto;
+      text-align: center;
+    }
   }
 
   &__image {
     transform: translateX(167px);
+
+    @include high-desktop {
+      transform: translateX(0);
+      text-align: center;
+    }
   }
 
   &__title {
@@ -33,5 +47,13 @@
     font-size: 20px;
     line-height: 160%;
     text-transform: initial;
+
+    @include high-tablet {
+      max-width: 100%;
+    }
+  }
+
+  @include high-tablet {
+    min-height: auto;
   }
 }

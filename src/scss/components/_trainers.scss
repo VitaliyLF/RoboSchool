@@ -11,6 +11,10 @@
 
   .swiper-slide {
     width: 360px;
+
+    @include small-tablet {
+      width: 220px;
+    }
   }
 
   .swiper-scrollbar-drag {
@@ -79,6 +83,10 @@
 
     &:not(:last-child) {
       margin-right: 10px;
+    }
+
+    @include mobile {
+      display: none;
     }
   }
 }
