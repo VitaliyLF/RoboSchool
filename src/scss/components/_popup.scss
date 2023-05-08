@@ -1,0 +1,162 @@
+.popup {
+  padding: 40px;
+  width: 100%;
+  max-width: 940px;
+
+  &__top {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__image {
+    margin-right: 40px;
+
+    img {
+      border-radius: 20px;
+    }
+
+    @include mobile {
+      margin-right: 20px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--dark-color);
+  }
+
+  &__post {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-color);
+  }
+
+  &__bottom-content {
+    padding-top: 20px;
+    max-height: 375px;
+    padding-right: 20px;
+  }
+
+  &__descr {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--dark-color);
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--dark-color);
+  }
+
+  .simplebar-track.simplebar-vertical {
+    margin: 20px 0;
+    background-color: rgba(20, 16, 36, 0.08);
+    border-radius: 40px;
+    width: 5px;
+  }
+
+  .simplebar-scrollbar {
+    &::before {
+      left: 0;
+      right: 0;
+      opacity: 1;
+      width: 5px;
+      border-radius: 40px;
+      background-color: var(--dark-color);
+    }
+  }
+
+  @include small-tablet {
+    padding-top: 80px;
+  }
+
+
+  @include mobile {
+    padding: 20px;
+    padding-top: 40px;
+  }
+}
+
+.graph-modal__close {
+  right: 40px;
+  top: 40px;
+  width: auto;
+  height: auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: var(--text-color);
+  background-image: none;
+
+  @include mobile {
+    right: 20px;
+    top: 20px;
+  }
+}
+
+.graph-modal {
+  &::before {
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.tabs {
+  &__menu {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+  }
+
+  &__nav {
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-item {
+      @include mobile {
+        margin-right: 40px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-btn {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      color: var(--dark-color);
+
+      &:focus {
+        background-color: transparent;
+        color: var(--accent-color);
+      }
+
+      &--active {
+        background-color: transparent;
+        outline: none;
+        color: var(--accent-color);
+      }
+    }
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+}
