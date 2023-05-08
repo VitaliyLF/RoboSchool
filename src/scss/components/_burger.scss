@@ -34,6 +34,7 @@
 }
 
 .burger-close {
+  display: none;
   position: absolute;
   top: 30px;
   right: var(--container-offset);
@@ -45,4 +46,8 @@
   background-repeat: no-repeat;
   background-size: 14px 12px;
   background-position: center center;
+
+  @include high-tablet {
+    display: block;
+  }
 }
