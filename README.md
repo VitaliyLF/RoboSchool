@@ -1,4 +1,4 @@
-RoboSchool-Курсы повышения квалификации [(Landing page)](vetosy.github.io/RoboSchool)
+RoboSchool-Курсы повышения квалификации [(Landing page)](https://vetosy.github.io/RoboSchool)
 - Волатильная,Адаптивная,Кроссбраузерная верстка
 - SCSS препроцессор
 - Gulp сборка
